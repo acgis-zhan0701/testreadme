@@ -1,17 +1,17 @@
-==Title==
+## Project
 
 Elevation for Each Ecological Zone
 
-==Description==
+### Description
 
 User uses the selected R tools and packages to extract elevation information at four different level of ecological zones.
 Four ecological zones are: ecozone, ecoprovince, ecoregion, ecodistrict.
 
-==Requirement==
+### Requirement
 
 Make sure you have R Studio installed on your computer, you can download R Studio from https://www.rstudio.com/products/rstudio/download/.
 
-==R packages==
+### R packages
 
 This project requires four open source packages, as shown below:
 
@@ -25,7 +25,7 @@ This project requires four open source packages, as shown below:
  - foreign::wrtie.dbf tool is used to write a dataframe to a .dbf file.
  - exactextractr::extract tool is used to extract value from raster layer. 
 
-==Input Data==
+### Input Data
 
 1. "Canada_DEM250m_LCC.tif". This subset of global 250m digital elevation model(DEM) data is produced by McMilian (2016).
 2. "DEM_250M_C.tif". This is the modified version of the "Canada_DEM250m_LCC.tif". Negative elevation are converted to zero by using raster calculator.
@@ -35,7 +35,7 @@ This project requires four open source packages, as shown below:
 	- "Ecoregion_shp.zip"
 	- "Ecodistrict_shp.zip"
 
-==Output File==
+### Output File
 
 Output files will be named as follows:
 
@@ -47,7 +47,7 @@ Four output database files are listed as follows:
 	- "pr_elevation.dbf" for Ecoprovince
 	- "rg_elevation.dbf" for Ecoregion
 	- "dt_elevation.dbf" for Ecodistrict
-==Note==
+### Note
 
 Exactextractr::extract tool does not support Points vertor data when extracting values from raster layer. 
 If you want to extract information from raster layers as points, raster::extract and terra:extract are both support points data.
