@@ -15,10 +15,10 @@ Make sure you have R Studio installed on your computer, you can download R Studi
 
 This project requires four open source packages, as shown below:
 
-1. raster:            "raster"
-2. sf:                "st_read"
-3. foreign:           "write.dbf"
-4. exactextractr:     "extract"
+1. raster:            
+2. sf:                
+3. foreign:           
+4. exactextractr:     
 
  - Raster::raster tool is used to create a raster layer file from an existing file.
  - sf:: st_read tool is used to read shapefile.
