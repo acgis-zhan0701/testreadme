@@ -15,10 +15,10 @@ Make sure you have R Studio installed on your computer, you can download R Studi
 
 This project requires four open source packages, as shown below:
 
-1. raster:            
-2. sf:                
-3. foreign:           
-4. exactextractr:     
+1. raster          
+2. sf                
+3. foreign           
+4. exactextractr     
 
  - Raster::raster tool is used to create a raster layer file from an existing file.
  - sf:: st_read tool is used to read shapefile.
@@ -34,6 +34,25 @@ This project requires four open source packages, as shown below:
 	- "Ecoprovince_shp.zip"
 	- "Ecoregion_shp.zip"
 	- "Ecodistrict_shp.zip"
+
+### Usage
+
+First load four packages
+```html
+library(raster)
+library(sf)
+library(foreign)
+library(exactextractr)
+```
+
+If you want to use your own input DEM file or ecological framework file, change the file path to yours.
+Example of the format of file path: "C:\\YOUR\\FILE\\PATH.shp"
+```html
+ecozone <- st_read("your file path") 
+ecoregion <- st_read("your file path")
+ecoprovince <- st_read("your file path")
+ecodistrict <- st_read("your file path")
+```
 
 ### Output File
 
