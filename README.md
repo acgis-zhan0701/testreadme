@@ -54,6 +54,12 @@ ecoprovince <- st_read("your file path")
 ecodistrict <- st_read("your file path")
 ```
 
+### Output Fields
+Output table contains five fields, including: <br />
+&nbsp; &nbsp; &nbsp; - "ECOXXXX_ID": An ID for different ecological area. You can find more information about the area ID in the [National Ecological Framework](https://sis.agr.gc.ca/cansis/nsdb/ecostrat/1999report/data_tables.html) page.
+
+
+
 ### Output File
 
 Output files will be named as follows:
